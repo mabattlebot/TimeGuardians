@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TimeGardians Player</title>
+    <!-- Loads the CheerpJ engine -->
+    <script src="https://cjrtnc.leaningtech.com"></script>
+  </head>
+  <body>
+    <script>
+      (async function () {
+        // Initialize Java
+        await cheerpjInit();
+        // Create the game window (Width, Height)
+        cheerpjCreateDisplay(800, 600);
+        // Run your file from the virtual /app/ folder
+        await cheerpjRunJar("/app/TimeGardians.jar");
+      })();
+    </script>
+  </body>
+</html>
